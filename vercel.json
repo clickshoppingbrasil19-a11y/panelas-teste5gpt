@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "panelas-teste4-main/guia_oficial.com/guia-oficial.com/panela/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "guia_oficial.com/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "panelas-teste4-main/guia_oficial.com/guia-oficial.com/panela/index.html"
+    }
+  ]
+}
